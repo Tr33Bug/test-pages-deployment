@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        #dynamicText {
+            margin-top: 20px;
+            color: darkblue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p id="dynamicText">Waiting for dynamic text...</p>
+
+    <script>
+        // Wait 3 seconds and then update the text content
+        setTimeout(function() {
+            document.getElementById("dynamicText").textContent = "This is Dynamic Text";
+        }, 3000);
+    </script>
+</body>
+</html>
